@@ -2,23 +2,19 @@ package com.example.object_part_practice.student;
 
 import java.util.Objects;
 
-public class Student {
-    private String name;
-    private int age;
-    public Student(String name, int age){
+public class Student_2 {
+    // If you only define values using constructors, it's a good idea to force it to be final.
+    private final String name;
+    private final int age;
+    public Student_2(String name, int age){
         this.name = name;
         this.age = age;
-    }
-
-    // If you change a value, it is better to use a clear name like changeName rather than a setter method for later maintenance.
-    public void changeName(String name) {
-        this.name = name;
     }
 
     @Override
     public boolean equals(Object object) {
         if (object == null || getClass() != object.getClass()) return false;
-        Student student = (Student) object;
+        Student_2 student = (Student_2) object;
         return age == student.age && Objects.equals(name, student.name);
     }
 
