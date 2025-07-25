@@ -2,12 +2,18 @@ package com.example.object_part_practice.student;
 
 import java.util.Objects;
 
+//Class creation(Student)
 public class Student {
     private String name;
     private int age;
     public Student(String name, int age){
         this.name = name;
         this.age = age;
+    }
+
+    //Define new method call changeName
+    public void changeName(String name){
+        this.name = name;
     }
 
     @Override
