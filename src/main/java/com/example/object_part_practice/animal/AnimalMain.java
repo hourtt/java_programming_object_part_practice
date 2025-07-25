@@ -7,6 +7,7 @@ public class AnimalMain {
         Animal horse = new Horse();
 
         Animal[] animals = {dog, cat, horse};
+
         for (int i = 0; i < animals.length; i++) {
             move(animals[i]);
         }

@@ -1,13 +1,14 @@
 package com.example.object_part_practice;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+//Disable this import
+//import org.springframework.boot.SpringApplication;
+//import org.springframework.boot.autoconfigure.SpringBootApplicatipublic
 
-@SpringBootApplication
-public class ObjectPartPracticeApplication {
+class ObjectPartPracticeApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ObjectPartPracticeApplication.class, args);
+//	We don't need this
+//		SpringApplication.run(ObjectPartPracticeApplication.class, args);
 	}
 
 }
